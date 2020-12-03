@@ -217,7 +217,7 @@ bool ElevatorSimulation::GetIn_elevator(Elevator& elevator, list<Requests>& acce
 {
 	list<Requests>::iterator it = all_requests.begin();
 
-	bool getin = false; // Проверява дали се е качил някой на този етаж
+	bool getin = false; // ГЏГ°Г®ГўГҐГ°ГїГўГ  Г¤Г Г«ГЁ Г±ГҐ ГҐ ГЄГ Г·ГЁГ« Г­ГїГЄГ®Г© Г­Г  ГІГ®Г§ГЁ ГҐГІГ Г¦
 	while (it != all_requests.end() && curr_time >= (*it).time)
 	{
 		if (elevator.curr_floor == (*it).floor)
@@ -263,7 +263,7 @@ bool ElevatorSimulation::GetIn_elevator(Elevator& elevator, list<Requests>& acce
 
 bool ElevatorSimulation::GoOff_from_elevator(Elevator& elevator, list<Requests>& accepted_req)
 {
-	bool off = false; // Ако е истина ще изпринти, че асансьорът е спрял на този етаж
+	bool off = false; // ГЂГЄГ® ГҐ ГЁГ±ГІГЁГ­Г  Г№ГҐ ГЁГ§ГЇГ°ГЁГ­ГІГЁ, Г·ГҐ Г Г±Г Г­Г±ГјГ®Г°ГєГІ ГҐ Г±ГЇГ°ГїГ« Г­Г  ГІГ®Г§ГЁ ГҐГІГ Г¦
 	while (!accepted_req.empty() && elevator.curr_floor == accepted_req.front().floor)
 	{
 		--elevator.people;
