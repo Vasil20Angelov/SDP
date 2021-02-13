@@ -1,0 +1,11 @@
+4 9
+q-Er Q\eR
+q Q 1
+Q q 1
+w W 0
+E e 2
+e E 2
+e R 1
+R e 1
+R E 1
+r R 1
